@@ -1,0 +1,3 @@
+[submodule "static/tte/simile"]
+	path = static/tte/simile
+	url = https://github.com/gtergeomatica/template_progetto_simile.git
