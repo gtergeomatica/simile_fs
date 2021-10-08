@@ -14,7 +14,7 @@
 
 `cd .. && unbun`
 
-`cd ../../../`
+`cd ../../`
 
 `sed -i 's/'${PWD##*/}'\/static\/tte\/img/img/g' static/tte/js/chunk-vendors.*.js`
 

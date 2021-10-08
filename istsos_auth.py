@@ -31,6 +31,9 @@ class IstsosAuth(object):
 
         return response
 
+    def json(self):
+        return self().json()
+
     def get_token(self):
         response = self()
         return response.json()['access_token']
