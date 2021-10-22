@@ -14,13 +14,13 @@ Prerequisito: installare docker e docker-compose (per windows docker desktop con
    ```
    Appuntarsi l'ID del container (prima colonna, tipicamente). Potete accedere a `localhost:8000` a meno che non abbiate cambiato la porta scritta nei file di configurazione di docker;
    
- 4. Impostiamo la pwd della dashboard da dentro il container (a scopo didattico):
+4. Impostiamo la pwd della dashboard da dentro il container (a scopo didattico):
    ```
    docker exec -it <CONTAINER_ID> bash
    ```
 
 5. Lanciamo e impostiamo la pwd:
    ```
-   py4web /py4web set_password
+   py4web set_password
    ```
    Ora possiamo accedere alla dashboard (lazy-mode on)
