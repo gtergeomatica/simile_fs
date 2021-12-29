@@ -1,16 +1,20 @@
 # -*- coding: utf-8 -*-
 
+from . import settings
+
 from py4web import response
 from py4web.core import Fixture
 from py4web.utils.form import Form
-from .common import session
+from .common import session, logger
 
 get_form = lambda : Form([], form_name='get_istsos_token', csrf_session=session)
 
 def formInfoThroughCookies():
     form = get_form()
+    # logger.debug(f'FORMKEY 2: {form.formkey}')
     response.set_cookie("form-name", form.form_name)
     response.set_cookie("form-key", form.formkey)
+    response.set_cookie("app-name", settings.APP_NAME)
 
 class CacheIt(Fixture):
 

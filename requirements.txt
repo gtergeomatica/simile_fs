@@ -1,0 +1,2 @@
+py4web==1.20210906.1
+requests

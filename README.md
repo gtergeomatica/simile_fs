@@ -26,7 +26,7 @@ n.b per unbun è necessario aver installato: `bs4 jsbeautifier cssbeautifier lxm
 
 ## Run
 
-`cd ..`
+`cd ../../`
 
 `py4web run apps`
 

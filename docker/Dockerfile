@@ -14,7 +14,7 @@ RUN service memcached restart
 
 RUN groupadd -r $user && useradd -m -r -g $user $user
 
-RUN python3 -m pip install -U py4web==1.20210906.1
+RUN python3 -m pip install -U py4web==1.20210816.1
 
 USER $user
 
