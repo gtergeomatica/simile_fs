@@ -39,3 +39,13 @@ e quindi ripetere i passi del parafrafo **Setup**.
 ## Main Doc
 
 [unbundler](https://github.com/ali96343/unbundler): dove tutto è cominciato.
+
+## Utilizzo Docker 
+
+Clonare il repository:
+`git clone  --recursive git@github.com:gtergeomatica/simile_fs.git`
+
+Costruire l'immagine e tirare su il container con l'orchestratore:
+`docker-compose up -d`
+
+Attualmente per dato che non c'è condivisione di volumi, se si vuole cambiare qualcosa è necessario o entrare nel container o cambiare qualcosa nel repository e ripetere il processo per costruire l'immagine.
