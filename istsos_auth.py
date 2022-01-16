@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from . import settings
 import requests
 
-DEFAULT_USERNAME = 'test'
-DEFAULT_PASSWORD = 'test'
+DEFAULT_USERNAME = settings.ISTSOS_USERNAME
+DEFAULT_PASSWORD = settings.ISTSOS_PASSWORD
 
 
 class IstsosAuth(object):

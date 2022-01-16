@@ -15,6 +15,7 @@ def formInfoThroughCookies():
     response.set_cookie("form-name", form.form_name)
     response.set_cookie("form-key", form.formkey)
     response.set_cookie("app-name", settings.APP_NAME)
+    response.set_cookie("istsos-services", settings.ISTSOS_SERVICES)
 
 class CacheIt(Fixture):
 
